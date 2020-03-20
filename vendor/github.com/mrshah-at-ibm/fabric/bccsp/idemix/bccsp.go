@@ -8,12 +8,12 @@ package idemix
 import (
 	"reflect"
 
-	"github.com/hyperledger/fabric/bccsp/idemix/bridge"
+	"github.com/mrshah-at-ibm/fabric/bccsp/idemix/bridge"
 
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/mrshah-at-ibm/fabric/bccsp/idemix/handlers"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
+	"github.com/mrshah-at-ibm/fabric/bccsp/sw"
 	"github.com/pkg/errors"
 )
 

@@ -22,9 +22,9 @@ import (
 	"github.com/hyperledger/fabric-ca/lib/server/idemix/mocks"
 	dmocks "github.com/hyperledger/fabric-ca/lib/server/idemix/mocks"
 	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/idemix"
 	"github.com/kisielk/sqlstruct"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

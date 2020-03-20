@@ -12,7 +12,7 @@ import (
 
 	"github.com/hyperledger/fabric-ca/lib/attrmgr"
 	"github.com/hyperledger/fabric-ca/util"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
 	"github.com/pkg/errors"
 )
 

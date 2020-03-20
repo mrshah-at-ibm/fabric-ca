@@ -11,10 +11,10 @@ import (
 	"crypto/x509"
 	"os"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/sw"
 	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/miekg/pkcs11"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
+	"github.com/mrshah-at-ibm/fabric/bccsp/sw"
 	"github.com/pkg/errors"
 )
 

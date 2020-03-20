@@ -10,7 +10,7 @@ import (
 	"github.com/hyperledger/fabric-ca/api"
 	"github.com/hyperledger/fabric-ca/lib/caerrors"
 	tcert "github.com/hyperledger/fabric-ca/lib/tcert"
-	"github.com/hyperledger/fabric/bccsp"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
 	"github.com/pkg/errors"
 )
 

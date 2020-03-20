@@ -10,8 +10,8 @@ import (
 	"crypto"
 	"io"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	"github.com/mrshah-at-ibm/fabric/bccsp"
+	"github.com/mrshah-at-ibm/fabric/bccsp/utils"
 	"github.com/pkg/errors"
 )
 

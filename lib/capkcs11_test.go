@@ -13,8 +13,8 @@ import (
 	"testing"
 
 	dbutil "github.com/hyperledger/fabric-ca/lib/server/db/util"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/mrshah-at-ibm/fabric/bccsp/factory"
+	"github.com/mrshah-at-ibm/fabric/bccsp/pkcs11"
 )
 
 func TestCAInit(t *testing.T) {
