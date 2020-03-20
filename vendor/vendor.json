@@ -501,13 +501,6 @@
 			"revisionTime": "2018-12-30T09:37:25Z"
 		},
 		{
-			"checksumSHA1": "GxaWcYIyCMkDHbpBIxtnV0s8Dd8=",
-			"path": "github.com/hyperledger/fabric/bccsp",
-			"revision": "e37aa35178fdb83228f63ef4670c1a67896f081b",
-			"revisionTime": "2019-10-16T01:19:04Z",
-			"tree": true
-		},
-		{
 			"checksumSHA1": "n+ZKx3gMoBi4t0fN84vzz0r2uCM=",
 			"path": "github.com/hyperledger/fabric/common/attrmgr",
 			"revision": "0c221f49da2667c9298ce36fdcd1a606f35927cf",
@@ -695,6 +688,13 @@
 			"path": "github.com/mitchellh/mapstructure",
 			"revision": "f3009df150dadf309fdee4a54ed65c124afad715",
 			"revisionTime": "2016-10-20T16:18:36Z"
+		},
+		{
+			"checksumSHA1": "aENVjIDf4lnY4/9rdJ2EMpZLi0c=",
+			"path": "github.com/mrshah-at-ibm/fabric/bccsp",
+			"revision": "9fda58c39ee7f110913b43ad31d6f8a4749de386",
+			"revisionTime": "2019-10-16T01:19:04Z",
+			"tree": true
 		},
 		{
 			"checksumSHA1": "nhZubwOs5fVIKjAmfo0cqAim7nY=",

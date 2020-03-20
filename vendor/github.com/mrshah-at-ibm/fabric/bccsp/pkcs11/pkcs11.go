@@ -83,8 +83,8 @@ func loadLib(lib, pin, label string) (*pkcs11.Ctx, uint, *pkcs11.SessionHandle, 
 
 func (csp *impl) getSession() (session pkcs11.SessionHandle) {
 	select {
-	case session = <-csp.sessions:
-		logger.Debugf("Reusing existing pkcs11 session %+v on slot %d\n", session, csp.slot)
+	// case session = <-csp.sessions:
+	// 	logger.Debugf("Reusing existing pkcs11 session %+v on slot %d\n", session, csp.slot)
 
 	default:
 		// cache is empty (or completely in use), create a new session
@@ -118,7 +118,6 @@ func (csp *impl) returnSession(session pkcs11.SessionHandle) {
 }
 
 // Look for an EC key by SKI, stored in CKA_ID
-// This function can probably be adapted for both EC and RSA keys.
 func (csp *impl) getECKey(ski []byte) (pubKey *ecdsa.PublicKey, isPriv bool, err error) {
 	p11lib := csp.ctx
 	session := csp.getSession()
@@ -215,7 +214,6 @@ func (csp *impl) generateECKey(curve asn1.ObjectIdentifier, ephemeral bool) (ski
 		pkcs11.NewAttribute(pkcs11.CKA_TOKEN, !ephemeral),
 		pkcs11.NewAttribute(pkcs11.CKA_VERIFY, true),
 		pkcs11.NewAttribute(pkcs11.CKA_EC_PARAMS, marshaledOID),
-		pkcs11.NewAttribute(pkcs11.CKA_PRIVATE, false),
 
 		pkcs11.NewAttribute(pkcs11.CKA_ID, publabel),
 		pkcs11.NewAttribute(pkcs11.CKA_LABEL, publabel),
